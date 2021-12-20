@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1\\source\\repos\\WebAPI_2\\WebAPI_2\\WebAPI_2.csproj": {}
+    "/home/eingird/Study/csharp/WebAPI_2/WebAPI_2/WebAPI_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1\\source\\repos\\WebAPI_2\\WebAPI_2\\WebAPI_2.csproj": {
+    "/home/eingird/Study/csharp/WebAPI_2/WebAPI_2/WebAPI_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1\\source\\repos\\WebAPI_2\\WebAPI_2\\WebAPI_2.csproj",
+        "projectUniqueName": "/home/eingird/Study/csharp/WebAPI_2/WebAPI_2/WebAPI_2.csproj",
         "projectName": "WebAPI_2",
-        "projectPath": "C:\\Users\\1\\source\\repos\\WebAPI_2\\WebAPI_2\\WebAPI_2.csproj",
-        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1\\source\\repos\\WebAPI_2\\WebAPI_2\\obj\\",
+        "projectPath": "/home/eingird/Study/csharp/WebAPI_2/WebAPI_2/WebAPI_2.csproj",
+        "packagesPath": "/home/eingird/.nuget/packages/",
+        "outputPath": "/home/eingird/Study/csharp/WebAPI_2/WebAPI_2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/eingird/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,12 +77,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.0, 6.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
