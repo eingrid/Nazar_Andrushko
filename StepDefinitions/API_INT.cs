@@ -24,7 +24,7 @@ namespace WebAPI_2.StepDefinitions
             RestClient clientCheck = new RestClient("https://api.dropboxapi.com/2/files/list_folder");
             RestRequest requestCheck = new RestRequest(Method.POST);
             clientCheck.Timeout = -1;
-            requestCheck.AddHeader("Authorization", "Bearer sl.A-jj5B2zkTD8ma4S35HYh7136WBi30oy44HJ4bvrUa2GcVD89kQWsXq6I4Yaa8258oB8qNG5fkcAr669qPNJxSB_300A7i-hM4ULMuuk13-bPnBrfuR8fx59LSZI6vPKe0iC3EUwkJ1W");
+            requestCheck.AddHeader("Authorization", "Bearer sl.A-gV5xx8sXRdMdRUcAF7DJhF_mECZ1b2ay5GnffGQjXiU29Y0Odq8Hh7p5xtXxdgek8H-gHt9qZKhacIF1EnxSmgDonBkLanGXD_l3DGlzf6CQkr_53G6aOlF_cxO_cLZ-FOoU8e4FIl");
             requestCheck.AddHeader("Content-Type", "application/json");
             var body = @"{" + "\n" +
             @"    ""path"" : """"" + "\n" +
@@ -41,7 +41,7 @@ namespace WebAPI_2.StepDefinitions
         {
             requestUpload.AddHeader("Content-Type", "application/octet-stream");
             requestUpload.AddHeader("Dropbox-API-Arg", "{\"path\": \"/NewFile.txt\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}");
-            requestUpload.AddHeader("Authorization", "Bearer sl.A-jj5B2zkTD8ma4S35HYh7136WBi30oy44HJ4bvrUa2GcVD89kQWsXq6I4Yaa8258oB8qNG5fkcAr669qPNJxSB_300A7i-hM4ULMuuk13-bPnBrfuR8fx59LSZI6vPKe0iC3EUwkJ1W");
+            requestUpload.AddHeader("Authorization", "Bearer sl.A-gV5xx8sXRdMdRUcAF7DJhF_mECZ1b2ay5GnffGQjXiU29Y0Odq8Hh7p5xtXxdgek8H-gHt9qZKhacIF1EnxSmgDonBkLanGXD_l3DGlzf6CQkr_53G6aOlF_cxO_cLZ-FOoU8e4FIl");
             IRestResponse response = clientUpload.Execute(requestUpload);
 
         }
@@ -66,7 +66,7 @@ namespace WebAPI_2.StepDefinitions
 
         public void sendRequestToDeleteFile()
         {
-            requestDelete.AddHeader("Authorization", "Bearer sl.A-jj5B2zkTD8ma4S35HYh7136WBi30oy44HJ4bvrUa2GcVD89kQWsXq6I4Yaa8258oB8qNG5fkcAr669qPNJxSB_300A7i-hM4ULMuuk13-bPnBrfuR8fx59LSZI6vPKe0iC3EUwkJ1W");
+            requestDelete.AddHeader("Authorization", "Bearer sl.A-gV5xx8sXRdMdRUcAF7DJhF_mECZ1b2ay5GnffGQjXiU29Y0Odq8Hh7p5xtXxdgek8H-gHt9qZKhacIF1EnxSmgDonBkLanGXD_l3DGlzf6CQkr_53G6aOlF_cxO_cLZ-FOoU8e4FIl");
             requestDelete.AddHeader("Content-Type", "application/json");
             var body = @"{" + "\n" +
             @"    ""path"": ""/NewFile.txt""" + "\n" +
@@ -95,7 +95,7 @@ namespace WebAPI_2.StepDefinitions
 
         public string sendRequestToGetMetadata()
         {
-            requestGetMeta.AddHeader("Authorization", "Bearer sl.A-jj5B2zkTD8ma4S35HYh7136WBi30oy44HJ4bvrUa2GcVD89kQWsXq6I4Yaa8258oB8qNG5fkcAr669qPNJxSB_300A7i-hM4ULMuuk13-bPnBrfuR8fx59LSZI6vPKe0iC3EUwkJ1W");
+            requestGetMeta.AddHeader("Authorization", "Bearer sl.A-gV5xx8sXRdMdRUcAF7DJhF_mECZ1b2ay5GnffGQjXiU29Y0Odq8Hh7p5xtXxdgek8H-gHt9qZKhacIF1EnxSmgDonBkLanGXD_l3DGlzf6CQkr_53G6aOlF_cxO_cLZ-FOoU8e4FIl");
             requestGetMeta.AddHeader("Content-Type", "application/json");
             var body = @"{" + "\n" +
             @"    ""path"": ""/papka""" + "\n" +
