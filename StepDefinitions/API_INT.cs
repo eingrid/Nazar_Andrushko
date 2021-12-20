@@ -50,7 +50,7 @@ namespace WebAPI_2.StepDefinitions
         {
             var response = getList_Folder_response();
 
-            if (response.Content.IndexOf("NewFile.txt") == -1 ){
+            if (response.Content.IndexOf("NewFile.txt") != -1 ){
                 throw new ArgumentException("File wasn't added");
             };
         }
@@ -80,7 +80,7 @@ namespace WebAPI_2.StepDefinitions
          
             var response = getList_Folder_response();
 
-            if (response.Content.IndexOf("NewFile.txt") != -1 ){
+            if (response.Content.IndexOf("NewFile.txt") == -1 ){
                 throw new ArgumentException("File wasn't deleted");
             };
         }
