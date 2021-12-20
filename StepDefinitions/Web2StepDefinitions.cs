@@ -5,7 +5,7 @@ namespace WebAPI_2.StepDefinitions
     public sealed class Web2StepDefinitions
     {
         
-        private string metadata_response;
+        private  string  metadata_response;
         API_INT api_interactable = new API_INT(); 
         [Given(@"We have file to upload")]
         public void GivenWeHaveFileToUpload()
