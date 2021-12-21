@@ -61,31 +61,22 @@ namespace Nazzar.StepDefinitions
             IWebElement btnAdd_workShift = driver.FindElement(By.XPath("//*[@id='btnAdd']"));
 
             btnAdd_workShift.Click();
-            System.Threading.Thread.Sleep(500);
+
         }
 
         [When(@"I enter Shift Name choose work hours choose available eployees")]
         public void WhenIEnterShiftNameChooseWorkHoursChooseAvailableEployees()
         {
 
-            System.Threading.Thread.Sleep(10000);
-            IWebElement Shift_name = driver.FindElement(By.Id("workShift_name"));
-            IWebElement time_from = driver.FindElement(By.Id("workShift_workHours_from"));
-            IWebElement time_to = driver.FindElement(By.Id("workShift_workHours_to"));
+            IWebElement Shift_name = driver.FindElement(By.XPath("//*[@id='workShift_name']"));
+            IWebElement time_from = driver.FindElement(By.XPath("//*[@id='workShift_workHours_from']"));
+            IWebElement time_to = driver.FindElement(By.XPath("//*[@id='workShift_workHours_to']"));
 
 
-
+            
             Shift_name.SendKeys("Some_Shift_Name");
-            Random rd = new Random();
-            int r1 = rd.Next(1, 4 * 24);
-            int r2 = rd.Next(r1 + 1, 4 * 24 + 1);
-
-            SelectElement select = new SelectElement(time_from);
-            select.SelectByIndex(r1);
-
-
-            SelectElement select2 = new SelectElement(time_to);
-            select2.SelectByIndex(r2);
+    
+            System.Threading.Thread.Sleep(5000);
 
 
             IWebElement btnAssignEmployee = driver.FindElement(By.Id("btnAssignEmployee"));
@@ -138,7 +129,6 @@ namespace Nazzar.StepDefinitions
 
             Confirm_Button.Click();
 
-            System.Threading.Thread.Sleep(50000);
         }
 
         [Then(@"I am observing Work Shift table without my record")]

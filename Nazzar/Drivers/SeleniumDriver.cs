@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Firefox;
 
 namespace Nazzar.Drivers
 {
@@ -16,7 +17,7 @@ namespace Nazzar.Drivers
 
         public IWebDriver Setup()
         {
-            driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+            driver = new FirefoxDriver("/home/eingird/Study/csharp/Selenium/");
             driver.Navigate().GoToUrl("https://opensource-demo.orangehrmlive.com/");
             _scenarioContext.Set(driver, "WebDriver");
                 

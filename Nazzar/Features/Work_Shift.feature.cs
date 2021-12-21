@@ -107,7 +107,7 @@ namespace Nazzar.Features
     testRunner.When("I click Add Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
-    testRunner.And("I enter Shift Name, choose work hours, choose available eployees", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I enter Shift Name choose work hours choose available eployees", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 9
     testRunner.And("I click Save button to save Work Shift", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
